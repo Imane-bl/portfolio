@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Étudiant </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="background">
+        <div class="grid-pattern"></div>
+        <div class="particles" id="particles"></div>
+        <div class="gradient-glow"></div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <i data-lucide="code-2"></i>
+            <span>Portfolio</span>
+        </div>
+        <div class="nav-menu">
+            <button class="nav-item active" data-section="hero" data-translate-key="nav_home">
+                <span class="nav-label">Accueil</span>
+                <i data-lucide="code-2" class="nav-icon"></i>
+            </button>
+            <button class="nav-item" data-section="about" data-translate-key="nav_about">
+                <span class="nav-label">À propos</span>
+                <i data-lucide="user" class="nav-icon"></i>
+            </button>
+            <button class="nav-item" data-section="skills" data-translate-key="nav_skills">
+                <span class="nav-label">Compétences</span>
+                <i data-lucide="bar-chart-3" class="nav-icon"></i>
+            </button>
+            <button class="nav-item" data-section="projects" data-translate-key="nav_projects">
+                <span class="nav-label">Projets</span>
+                <i data-lucide="folder-open" class="nav-icon"></i>
+            </button>
+            <button class="nav-item" data-section="contact" data-translate-key="nav_contact">
+                <span class="nav-label">Contact</span>
+                <i data-lucide="mail" class="nav-icon"></i>
+            </button>
+        </div>
+
+        <div class="header-actions">
+                <div class="language-switcher">
+                    <button id="lang-fr" class="lang-btn active">FR</button>
+                    <button id="lang-en" class="lang-btn">EN</button>
+                </div>
+                
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <i data-lucide="sun"></i>
+        </button>
+        </div>
+        
+    </div>
+</nav>
+
+    <section id="hero" class="section hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-avatar">
+                    <div class="avatar-glow"></div>
+                    <div class="avatar">
+                        <span class="avatar-emoji"><img src="images/photo.jpg" alt="Ma photo"></span>
+                    </div>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="hero-subtitle" data-translate-key="hero_subtitle">Hey, moi c'est</span>
+                    <span class="hero-main-title" data-translate-key="hero_main_title">Imene </span>
+                </h1>
+                
+                <p class="hero-description" data-translate-key="hero_description">
+                    Étudiante en informatique passionné par la <span class="text-cyan">data</span>, 
+                    le <span class="text-purple">code</span>, 
+                    le <span class="text-pink">design</span> et 
+                    la <span class="text-blue">photographie</span>.
+                    <br>
+                    Je crée des projets qui mélangent technologie et créativité.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#opportunity" class="btn btn-primary" data-translate-key="btn_stage">
+                        Je cherche un stage 🚀
+                    </a>
+                    <a href="#projects" class="btn btn-outline" data-translate-key="btn_projects">
+                        Mes projets
+                    </a>
+                </div>
+                
+                <div class="hero-status">
+                    <div class="status-dot"></div>
+                    <span data-translate-key="status_availability">Disponible pour stage & alternance</span>
+                </div>
+                
+                <div class="hero-socials">
+                    <a href="https://github.com/Imane-bl?tab=overview&from=2024-12-01&to=2024-12-31" target="_blank" class="social-link">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/bellaghma-imene-74b081294" target="_blank" class="social-link">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="mailto:bellaghma.imanel@gmail.com" class="social-link">
+                        <i data-lucide="mail"></i>
+                    </a>
+                </div>
+                
+                <div class="scroll-indicator">
+                    <i data-lucide="chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text" data-translate-key="title_about">Qui suis-je ?</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-text">
+                    <div class="about-card">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="card-title">
+                                <i data-lucide="coffee"></i>
+                                <h3 data-translate-key="about_title_1">Mon parcours</h3>
+                            </div>
+                            <p data-translate-key="about_p1">
+                                Actuellement étudiant en informatique, je suis fasciné par l'intersection entre 
+                                la technologie et la créativité. .
+                            </p>
+                            <p data-translate-key="about_p2">
+                                Passionné par la <span class="text-cyan">data</span>, j'adore extraire des insights 
+                                et créer des visualisations qui racontent une histoire. Mais je ne m'arrête pas là : 
+                                le <span class="text-purple">design</span>, le <span class="text-pink">dessin</span> et 
+                                la <span class="text-blue">photographie</span> sont mes autres terrains de jeu.
+                            </p>
+                            <div class="info-box">
+                                <i data-lucide="sparkles"></i>
+                                <span data-translate-key="about_tip">Toujours curieuse d'apprendre et d'explorer de nouvelles technologies</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="passions-grid">
+                    <div class="passion-card" data-color="cyan">
+                        <div class="passion-icon">
+                            <i data-lucide="database"></i>
+                        </div>
+                        <h3 data-translate-key="passion_data">Data & Analytics</h3>
+                        <p data-translate-key="passion_data_desc">Analyser, visualiser et donner du sens aux données</p>
+                    </div>
+                    
+                    <div class="passion-card" data-color="purple">
+                        <div class="passion-icon">
+                            <i data-lucide="code"></i>
+                        </div>
+                        <h3 data-translate-key="passion_dev">Développement</h3>
+                        <p data-translate-key="passion_dev_desc">Créer des applications et automatiser des processus</p>
+                    </div>
+                    
+                    <div class="passion-card" data-color="pink">
+                        <div class="passion-icon">
+                            <i data-lucide="palette"></i>
+                        </div>
+                        <h3 data-translate-key="passion_design">Design & Art</h3>
+                        <p data-translate-key="passion_design_desc">Dessiner, créer et explorer l'univers visuel</p>
+                    </div>
+                    
+                    <div class="passion-card" data-color="red">
+                        <div class="passion-icon">
+                            <i data-lucide="camera"></i>
+                        </div>
+                        <h3 data-translate-key="passion_photo">Photographie</h3>
+                        <p data-translate-key="passion_photo_desc">Capturer des moments et raconter des histoires</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text" data-translate-key="title_skills">Mes Compétences</h2>
+                <div class="section-line"></div>
+              <!--<p class="section-subtitle" data-translate-key="skills_subtitle">Un mix de compétences techniques en développement et data, combinées à une sensibilité créative</p>--> 
+            </div>
+            
+            <div class="skills-categories">
+                <div class="skill-category">
+                    <div class="category-line" data-color="cyan"></div>
+                    <h3 data-translate-key="skill_cat_lang">Langages de programmation</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">SQL,PHP</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="category-line" data-color="purple"></div>
+                    <h3 data-translate-key="skill_cat_data">Data & Analyse</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Jupyter Notebook</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Data Viz</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="category-line" data-color="pink"></div>
+                    <h3 data-translate-key="skill_cat_tools">Outils & Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Docker</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="category-line" data-color="red"></div>
+                    <h3 data-translate-key="skill_cat_creative">Créativité & Design</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Processing</span>
+                        <span class="skill-tag">Design UI/UX</span>
+                        <span class="skill-tag">Photographie</span>
+                        <span class="skill-tag">Illustration</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-levels">
+                <h3 class="text-cyan" data-translate-key="skills_mastery_title">Niveau de maîtrise</h3>
+                <div class="skills-bars">
+                    <div class="skill-bar-item">
+                        <div class="skill-info">
+                            <span class="skill-emoji">🐍</span>
+                            <span class="skill-name">Python</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-percent="85"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-bar-item">
+                        <div class="skill-info">
+                            <span class="skill-emoji">📊</span>
+                            <span class="skill-name">SQL</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-percent="80"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-bar-item">
+                        <div class="skill-info">
+                            <span class="skill-emoji">⚡</span>
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-percent="75"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-bar-item">
+                        <div class="skill-info">
+                            <span class="skill-emoji">☕</span>
+                            <span class="skill-name">Java</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-percent="70"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-bar-item">
+                        <div class="skill-info">
+                            <span class="skill-emoji">⚙️</span>
+                            <span class="skill-name">C</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-percent="65"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-bar-item">
+                        <div class="skill-info">
+                            <span class="skill-emoji">🌿</span>
+                            <span class="skill-name">Git</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-percent="80"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text" data-translate-key="title_projects">Mes Projets</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle" data-translate-key="projects_subtitle">Une sélection de projets qui démontrent mes compétences</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-glow"></div>
+                    <div class="project-image">
+                        <img src="images/irrgVerbe.png" alt="Projet 1">
+                        <div class="project-overlay gradient-cyan"></div>
+                        <div class="project-icon">
+                            <i data-lucide="bar-chart-3"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate-key="project_1_title">Apprentissage des verbes irréguliers anglais – Application Android</h3>
+                        <p data-translate-key="project_1_desc">Application mobile interactive conçue pour aider les utilisateurs à apprendre et réviser les verbes irréguliers anglais. L’app propose des exercices, des quiz et un suivi des progrès, avec une interface intuitive adaptée aux mobiles. Les données des utilisateurs et leur progression sont sauvegardées localement, garantissant une expérience personnalisée et continu.</p>
+                        <div class="project-tags">
+                            <span>Java</span>
+                          <span>Android Studio</span> 
+                            <span>XML</span>
+                            <span>SQLite</span>
+                            <span>SharedPreferences</span>
+                           
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i data-lucide="external-link"></i>
+                                <span data-translate-key="btn_view_project">Voir le projet</span>
+                            </a>
+                            <a href="#" class="project-link secondary">
+                                <i data-lucide="github"></i>
+                                <span data-translate-key="btn_view_code">Code source</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-glow"></div>
+                    <div class="project-image">
+                        <img src="images/projetBdd.png" alt="Projet 2">
+                        <div class="project-overlay gradient-purple"></div>
+                        <div class="project-icon">
+                            <i data-lucide="database"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate-key="project_2_title">Système de gestion des transports LIA</h3>
+                        <p data-translate-key="project_2_desc">Site web permettant de gérer les lignes, arrêts et voyageurs du réseau de transport LIA. Le projet inclut la création, lecture, mise à jour et suppression (CRUD) des données, avec des formulaires dynamiques et une interface simple pour administrer efficacement la base de données.</p>
+                        <div class="project-tags">
+                            <span>PHP</span>
+                            <span>SQL (PostgreSQL)</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i data-lucide="external-link"></i>
+                                <span data-translate-key="btn_view_project">Voir le projet</span>
+                            </a>
+                            <a href="#" class="project-link secondary">
+                                <i data-lucide="github"></i>
+                                <span data-translate-key="btn_view_code">Code source</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-glow"></div>
+                    <div class="project-image">
+                        <img src="images/test.png" alt="Projet 3">
+                        <div class="project-overlay gradient-pink"></div>
+                        <div class="project-icon">
+                            <i data-lucide="brain"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate-key="project_3_title">Analyse statistique – Test Beshdal</h3>
+                        <p data-translate-key="project_3_desc">Projet d’analyse de données pour le Test Beshdal réalisé sur Google Colab. Le projet consistait à traiter et explorer des données expérimentales, calculer des indicateurs statistiques, visualiser les résultats et en tirer des conclusions pertinentes..</p>
+                        <div class="project-tags">
+                            
+                            <span>Python</span>
+                            <span>Google Colab,</span>
+                            <span>pandas,numpy</span>
+                            <span>matplotlib</span>
+
+ 
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i data-lucide="external-link"></i>
+                                <span data-translate-key="btn_view_project">Voir le projet</span>
+                            </a>
+                            <a href="#" class="project-link secondary">
+                                <i data-lucide="github"></i>
+                                <span data-translate-key="btn_view_code">Code source</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="project-card">
+                    <div class="project-glow"></div>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="Projet 4">
+                        <div class="project-overlay gradient-red"></div>
+                        <div class="project-icon">
+                            <i data-lucide="trending-up"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate-key="project_4_title">Analyse Exploratoire de Datasets</h3>
+                        <p data-translate-key="project_4_desc">Notebook d'analyse de données publiques avec nettoyage, exploration statistique et insights visuels. Focus sur la qualité des données et storytelling.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Jupyter</span>
+                            <span>SQL</span>
+                            <span>Data Viz</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i data-lucide="external-link"></i>
+                                <span data-translate-key="btn_view_project">Voir le projet</span>
+                            </a>
+                            <a href="#" class="project-link secondary">
+                                <i data-lucide="github"></i>
+                                <span data-translate-key="btn_view_code">Code source</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>-->
+    </section>
+
+    <section id="opportunity" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="availability-badge">
+                    <div class="status-dot-green"></div>
+                    <span data-translate-key="status_available_opp">Disponible immédiatement</span>
+                </div>
+                <h2 class="section-title gradient-text" data-translate-key="title_opportunity">Je recherche une opportunité</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle" data-translate-key="opportunity_subtitle">Motivé, curieux et prêt à relever de nouveaux défis dans le monde de la tech et de la data</p>
+            </div>
+            
+            <div class="opportunity-cards">
+                <div class="opportunity-card" data-color="cyan">
+                    <div class="opp-glow"></div>
+                    <div class="opp-icon gradient-cyan">
+                        <i data-lucide="briefcase"></i>
+                    </div>
+                    <h3 data-translate-key="opp_stage_title">Stage (immédiat)</h3>
+                    <p data-translate-key="opp_stage_desc">Je recherche activement un stage a partir du mois mars pour mettre en pratique mes compétences et apprendre auprès de professionnels</p>
+                    <div class="opp-duration">
+                        <i data-lucide="clock"></i>
+                        <span data-translate-key="opp_stage_duration">Durée: 2-6 mois</span>
+                    </div>
+                </div>
+                
+                <div class="opportunity-card" data-color="pink">
+                    <div class="opp-glow"></div>
+                    <div class="opp-icon gradient-pink">
+                        <i data-lucide="graduation-cap"></i>
+                    </div>
+                    <h3 data-translate-key="opp_alternance_title">Alternance </h3>
+                    <p data-translate-key="opp_alternance_desc">Intéressé par une alternance pour combiner formation académique et expérience professionnelle concrète</p>
+                    <div class="opp-duration">
+                        <i data-lucide="clock"></i>
+                        <span data-translate-key="opp_alternance_duration">Durée: 1-2 ans</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="interests-section">
+                <div class="interests-header">
+                    
+                    <h3 data-translate-key="interests_title">Ce qui m'intéresse</h3>
+                    <p data-translate-key="interests_subtitle">Domaines et technologies qui me passionnent</p>
+                </div>
+                <div class="interests-grid">
+                    <div class="interest-item">
+                        <span class="interest-emoji">📊</span>
+                        <span data-translate-key="interest_data_viz">Analyse et visualisation de données</span>
+                    </div>
+                    <div class="interest-item">
+                        <span class="interest-emoji">🤖</span>
+                        <span data-translate-key="interest_ml">Machine Learning & IA</span>
+                    </div>
+                    <div class="interest-item">
+                        <span class="interest-emoji">💻</span>
+                        <span data-translate-key="interest_dev_app">Développement d'applications</span>
+                    </div>
+                    <div class="interest-item">
+                        <span class="interest-emoji">🎨</span>
+                        <span data-translate-key="interest_creative">Projets créatifs & innovants</span>
+                    </div>
+                    <div class="interest-item">
+                        <span class="interest-emoji">🌐</span>
+                        <span data-translate-key="interest_web">Web & technologies modernes</span>
+                    </div>
+                    <div class="interest-item">
+                        <span class="interest-emoji">🔧</span>
+                        <span data-translate-key="interest_automation">Automatisation & outils</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-box">
+                <i data-lucide="sparkles"></i>
+               <h3 data-translate-key="cta_title">Vous avez une opportunité </h3>
+                <p data-translate-key="cta_text">Je suis ouvert à discuter de projets passionnants, de stages ou d'alternances. N'hésitez pas à me contacter pour échanger !</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary" data-translate-key="btn_contact_me_cta">Me contacter</a>
+                    <a href="#" class="btn btn-outline" data-translate-key="btn_download_cv">Télécharger mon CV</a>
+                </div>
+                <div class="cta-info">
+                    <div class="info-item">
+                        <i data-lucide="map-pin"></i>
+                        <span data-translate-key="location">Le Havre France </span>
+                    </div>
+                    <div class="info-item">
+                        <i data-lucide="calendar"></i>
+                        <span data-translate-key="available_now">Disponible dès maintenant</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text" data-translate-key="title_contact">Contactez-moi</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle" data-translate-key="contact_subtitle">Une question ou une opportunité ? N'hésitez pas à me contacter !</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3 class="text-cyan" data-translate-key="contact_info_title">Informations de contact</h3>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div>
+                                    <p class="contact-label" data-translate-key="contact_label_email">Email</p>
+                                    <a href="mailto:votre.email@example.com">bellaghma.imane@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i data-lucide="linkedin"></i>
+                                </div>
+                                <div>
+                                    <p class="contact-label" data-translate-key="contact_label_linkedin">LinkedIn</p>
+                                    <a href="https://linkedin.com" target="_blank">www.linkedin.com/in/bellaghma-imene-74b081294</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i data-lucide="github"></i>
+                                </div>
+                                <div>
+                                    <p class="contact-label" data-translate-key="contact_label_github">GitHub</p>
+                                    <a href="https://github.com" target="_blank">github.com/votreprofil</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+                                <div>
+                                    <p class="contact-label" data-translate-key="contact_label_location">Localisation</p>
+                                    <span data-translate-key="contact_location_value">Le Havre, France</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-tip">
+                        <p>
+                            💡 <span class="text-cyan" data-translate-key="contact_tip_title">Pourquoi me contacter ?</span>
+                        </p>
+                        <ul>
+                            <li data-translate-key="contact_list_opp">✨ Opportunités de stage ou alternance</li>
+                            <li data-translate-key="contact_list_collab">🤝 Collaborations sur des projets</li>
+                            <li data-translate-key="contact_list_discussion">💬 Discussions tech, data ou créatives</li>
+                            <li data-translate-key="contact_list_share">📸 Partage d'idées et de passions</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" data-translate-key="form_label_name">Nom</label>
+                            <input type="text" id="name" name="name" data-placeholder-key="form_placeholder_name" placeholder="Votre nom" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" data-translate-key="form_label_email">Email</label>
+                            <input type="email" id="email" name="email" data-placeholder-key="form_placeholder_email" placeholder="votre.email@example.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" data-translate-key="form_label_message">Message</label>
+                            <textarea id="message" name="message" rows="6" data-placeholder-key="form_placeholder_message" placeholder="Votre message..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i data-lucide="send"></i>
+                            <span data-translate-key="form_send_btn">Envoyer le message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <p data-translate-key="footer_copyright">© 2025 Portfolio créé avec passion </p>
+                <p class="footer-subtitle" data-translate-key="footer_tagline">Code · Data · Design · Photographie</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
